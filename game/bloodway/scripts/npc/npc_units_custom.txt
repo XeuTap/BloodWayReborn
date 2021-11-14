@@ -1,0 +1,3996 @@
+  // Dota Units File
+"DOTAUnits"
+{
+  "Version" "1"
+  "creep_1"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models\heroes\broodmother\spiderling.vmdl" 
+      "precache"
+       {
+          "model"  "models\heroes\broodmother\spiderling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "0.2"
+  "ArmorPhysical"          "0.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "10.0"
+  "AttackDamageMax"        "11.0"
+  "AttackRate"             "1.3"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "130.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_2"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models\creeps\neutral_creeps\n_creep_satyr_b\n_creep_satyr_b.vmdl" 
+      "precache"
+       {
+          "model"  "models\creeps\neutral_creeps\n_creep_satyr_b\n_creep_satyr_b.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "2.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "7.0"
+  "AttackDamageMax"        "10.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "240.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_3"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models\creeps\neutral_creeps\n_creep_gnoll\n_creep_gnoll.vmdl" 
+      "precache"
+       {
+          "model"  "models\creeps\neutral_creeps\n_creep_gnoll\n_creep_gnoll.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "4.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "14.0"
+  "AttackDamageMax"        "15.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "400.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "boss_fairy_dragon"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models\heroes\puck\puck.vmdl" 
+      "precache"
+       {
+          "model"  "models\heroes\puck\puck.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "6.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "4.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "46.0"
+  "AttackDamageMax"        "49.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "980.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "400.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6176" }
+          "2" { "ItemDef" "6177" }
+          "3" { "ItemDef" "6178" }
+      }
+  }
+  }
+
+  "spawn_creature_1"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models\items\enigma\eidolon\tentacular_conqueror_tentacular_conqueror_eidolons\tentacular_conqueror_tentacular_conqueror_eidolons.vmdl" 
+      "precache"
+       {
+          "model"  "models\items\enigma\eidolon\tentacular_conqueror_tentacular_conqueror_eidolons\tentacular_conqueror_tentacular_conqueror_eidolons.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "0.0"
+  "BountyGoldMax"          "0.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "10.0"
+  "AttackDamageMax"        "10.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "450.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_4"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/brewmaster/brewmaster_windspirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/brewmaster/brewmaster_windspirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "5.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "19.0"
+  "AttackDamageMax"        "22.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "650.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_5"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/brewmaster/brewmaster_firespirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/brewmaster/brewmaster_firespirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "5.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "13.0"
+  "AttackDamageMax"        "16.0"
+  "AttackRate"             "1.1"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "600.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "500.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_6"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/brewmaster/brewmaster_voidspirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/brewmaster/brewmaster_voidspirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "5.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "19.0"
+  "AttackDamageMax"        "22.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "650.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "400.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_hell_elemental"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/invoker/forge_spirit/arsenal_magus_forged_spirit/arsenal_magus_forged_spirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/invoker/forge_spirit/arsenal_magus_forged_spirit/arsenal_magus_forged_spirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "7.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "23.0"
+  "AttackDamageMax"        "26.0"
+  "AttackRate"             "0.9"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "850.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "500.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_crystal_elemental"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/brewmaster/brewmaster_voidspirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/brewmaster/brewmaster_voidspirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "7.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "31.0"
+  "AttackDamageMax"        "34.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "875.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "400.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_defender_elemental"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/brewmaster/brewmaster_windspirit.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/brewmaster/brewmaster_windspirit.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "7.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "24.0"
+  "AttackDamageMax"        "27.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "900.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "700.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_wild_gnoll"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "11.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "51.0"
+  "AttackDamageMax"        "52.0"
+  "AttackRate"             "1.75"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "900.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_gnoll_thief"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "12.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "45.0"
+  "AttackDamageMax"        "48.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1150.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ice_knight"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton01.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton01.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "17.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.3"
+  "MagicalResistance"      "40.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "51.0"
+  "AttackDamageMax"        "53.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2200.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "1000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_skeleton"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "22.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "2.0"
+  "MagicalResistance"      "30.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "1.0"
+  "BountyGoldMax"          "2.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "71.0"
+  "AttackDamageMax"        "72.0"
+  "AttackRate"             "0.7"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2300.0"
+  "StatusHealthRegen"      "2.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_necromant"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/necrolyte/necrolyte.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/necrolyte/necrolyte.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "24.0"
+  "ModelScale"             "0.6"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "30.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "116.0"
+  "AttackDamageMax"        "123.0"
+  "AttackRate"             "1.25"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2900.0"
+  "StatusHealthRegen"      "1.5"
+  "StatusMana"             "600.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_butcher"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/pudge/pudge.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/pudge/pudge.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "26.0"
+  "ModelScale"             "0.8"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "156.0"
+  "AttackDamageMax"        "161.0"
+  "AttackRate"             "1.55"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "4450.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_dire_envoy"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/necrolyte/necrolyte.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/necrolyte/necrolyte.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "26.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "121.0"
+  "AttackDamageMax"        "128.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "3400.0"
+  "StatusHealthRegen"      "1.5"
+  "StatusMana"             "1200.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_dire_elemental"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/morphling/morphling.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/morphling/morphling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "10.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "99.0"
+  "BountyGoldMax"          "120.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "161.0"
+  "AttackDamageMax"        "168.0"
+  "AttackRate"             "1.15"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1400.0"
+  "StatusHealthRegen"      "1.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_keitars_guard"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_b.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_b.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "25.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "2.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "151.0"
+  "AttackDamageMax"        "152.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "4000.0"
+  "StatusHealthRegen"      "4.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_fire_hanger"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_furbolg/n_creep_furbolg_disrupter.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_furbolg/n_creep_furbolg_disrupter.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "26.0"
+  "ModelScale"             "0.6"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "40.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "146.0"
+  "AttackDamageMax"        "147.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "3500.0"
+  "StatusHealthRegen"      "3.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_fire_himmera"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "29.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "1.2"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "81.0"
+  "AttackDamageMax"        "82.0"
+  "AttackRate"             "0.4"
+  "AttackRange"            "350.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "3300.0"
+  "StatusHealthRegen"      "2.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_FLY"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_firebug"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "27.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.8"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "111.0"
+  "AttackDamageMax"        "112.0"
+  "AttackRate"             "1.2"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "3200.0"
+  "StatusHealthRegen"      "3.0"
+  "StatusMana"             "1500.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_fire_jokey"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_big.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_big.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "28.0"
+  "ModelScale"             "0.6"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "146.0"
+  "AttackDamageMax"        "147.0"
+  "AttackRate"             "1.4"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "4200.0"
+  "StatusHealthRegen"      "3.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ice_ghost"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "17.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "66.0"
+  "AttackDamageMax"        "76.0"
+  "AttackRate"             "0.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2350.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "2150.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_knight_ghost"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "19.0"
+  "ModelScale"             "0.7"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "111.0"
+  "AttackDamageMax"        "121.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2800.0"
+  "StatusHealthRegen"      "2.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ice_troll"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "14.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "44.0"
+  "AttackDamageMax"        "47.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1450.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_hunter_wolf"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/lycan/wolves/alpha_summon_01/alpha_summon_01.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/lycan/wolves/alpha_summon_01/alpha_summon_01.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "15.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.7"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "56.0"
+  "AttackDamageMax"        "59.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1450.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ice_troll_priest"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "13.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "66.0"
+  "AttackDamageMax"        "73.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1480.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "1300.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "boss_djabotay"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/troll_warlord/troll_warlord.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/troll_warlord/troll_warlord.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "15.0"
+  "ModelScale"             "1.1"
+  "ArmorPhysical"          "2.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "6.0"
+  "BountyGoldMax"          "7.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "116.0"
+  "AttackDamageMax"        "123.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "5500.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ice_troll_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "14.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "44.0"
+  "AttackDamageMax"        "47.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1450.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_dead_troll_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "16.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.8"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "36.0"
+  "AttackDamageMax"        "39.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "2000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_dead_troll_priest"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "17.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "71.0"
+  "AttackDamageMax"        "78.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "1800.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "1300.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_green_dragon"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight_dragon.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "45.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "10.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "33.0"
+  "BountyGoldMax"          "45.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "456.0"
+  "AttackDamageMax"        "467.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "29500.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_FLY"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_young_dragonit"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "44.0"
+  "ModelScale"             "0.8"
+  "ArmorPhysical"          "7.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "381.0"
+  "AttackDamageMax"        "387.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "28000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "16000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_green_dragon_young"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight_dragon.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "44.0"
+  "ModelScale"             "0.25"
+  "ArmorPhysical"          "5.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "7.0"
+  "BountyGoldMax"          "10.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "261.0"
+  "AttackDamageMax"        "268.0"
+  "AttackRate"             "0.9"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "23000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_dragonit"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "45.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "8.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "436.0"
+  "AttackDamageMax"        "442.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "34000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "18000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ancient_green_dragon"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight_persona/dk_persona_dragon.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight_persona/dk_persona_dragon.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "46.0"
+  "ModelScale"             "1.4"
+  "ArmorPhysical"          "12.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "44.0"
+  "BountyGoldMax"          "68.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "863.0"
+  "AttackDamageMax"        "896.0"
+  "AttackRate"             "1.7"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "37300.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_centaur_warrior"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "36.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "3.0"
+  "MagicalResistance"      "30.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "211.0"
+  "AttackDamageMax"        "212.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "7150.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_centaur_archer"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "materials/models/centaur_archer/n_creep_centaur_med.vmdl" 
+      "precache"
+       {
+          "model"  "materials/models/centaur_archer/n_creep_centaur_med.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "38.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "2.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "256.0"
+  "AttackDamageMax"        "259.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "6650.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "2000.0"
+  "StatusManaRegen"        "2.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "boss_centaur_chief"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "39.0"
+  "ModelScale"             "1.3"
+  "ArmorPhysical"          "10.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "781.0"
+  "AttackDamageMax"        "787.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "32000.0"
+  "StatusHealthRegen"      "1.0"
+  "StatusMana"             "5000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_numb_harpy"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "37.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "231.0"
+  "AttackDamageMax"        "239.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "6000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "1600.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_FLY"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ogre_warrior"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/n_creep_ogre_med/n_creep_ogre_med.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/n_creep_ogre_med/n_creep_ogre_med.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "41.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "12.0"
+  "MagicalResistance"      "25.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "386.0"
+  "AttackDamageMax"        "387.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "28000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ogre_soldier"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/n_creep_ogre_med/n_creep_ogre_med.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/n_creep_ogre_med/n_creep_ogre_med.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "43.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "13.0"
+  "MagicalResistance"      "30.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "526.0"
+  "AttackDamageMax"        "529.0"
+  "AttackRate"             "1.15"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "32000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_ogre_mage"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_ogre_lrg/n_creep_ogre_lrg.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_ogre_lrg/n_creep_ogre_lrg.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "41.0"
+  "ModelScale"             "1.1"
+  "ArmorPhysical"          "12.0"
+  "MagicalResistance"      "25.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "386.0"
+  "AttackDamageMax"        "389.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "28000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "25000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_naga_warrior"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/slardar/slardar.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/slardar/slardar.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "54.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "20.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1121.0"
+  "AttackDamageMax"        "1127.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "52000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "273" }
+          "2" { "ItemDef" "274" }
+          "3" { "ItemDef" "275" }
+          "4" { "ItemDef" "276" }
+      }
+  }
+  }
+
+  "creep_sea_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/tidehunter/tidehunter.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/tidehunter/tidehunter.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "55.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "22.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "941.0"
+  "AttackDamageMax"        "944.0"
+  "AttackRate"             "0.9"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "55000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "7000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "34" }
+          "2" { "ItemDef" "35" }
+          "3" { "ItemDef" "36" }
+          "4" { "ItemDef" "37" }
+      }
+  }
+  }
+
+  "creep_sea_elemental"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/morphling/morphling.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/morphling/morphling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "52.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "12.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "771.0"
+  "AttackDamageMax"        "780.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "40000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "573" }
+          "2" { "ItemDef" "574" }
+          "3" { "ItemDef" "575" }
+          "4" { "ItemDef" "576" }
+          "5" { "ItemDef" "577" }
+      }
+  }
+  }
+
+  "creep_sea_lord"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/tidehunter/tidehunter.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/tidehunter/tidehunter.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "56.0"
+  "ModelScale"             "1.5"
+  "ArmorPhysical"          "24.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1231.0"
+  "AttackDamageMax"        "1237.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "80000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "14000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6467" }
+          "2" { "ItemDef" "6468" }
+          "3" { "ItemDef" "6469" }
+          "4" { "ItemDef" "6470" }
+          "5" { "ItemDef" "6471" }
+      }
+  }
+  }
+
+  "creep_naga_caster"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/siren/siren.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/siren/siren.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "53.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "12.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "921.0"
+  "AttackDamageMax"        "927.0"
+  "AttackRate"             "1.15"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "42500.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "80000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "191" }
+          "2" { "ItemDef" "192" }
+          "3" { "ItemDef" "193" }
+          "4" { "ItemDef" "194" }
+          "5" { "ItemDef" "312" }
+      }
+  }
+  }
+
+  "creep_sea_undead"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton02.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/ice_biome/undeadtusk/undead_tuskskeleton02.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "52.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "331.0"
+  "AttackDamageMax"        "339.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "38000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_abaddon"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/abaddon/abaddon.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/abaddon/abaddon.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "12.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "30.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "55.0"
+  "BountyGoldMax"          "73.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "3141.0"
+  "AttackDamageMax"        "3147.0"
+  "AttackRate"             "0.95"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "145000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_bandit_killer"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "51.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "331.0"
+  "AttackDamageMax"        "334.0"
+  "AttackRate"             "0.4"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "34000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_bandit_robber"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "49.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "481.0"
+  "AttackDamageMax"        "482.0"
+  "AttackRate"             "0.4"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "32000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_rock_giant"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/tiny/tiny_04/tiny_04.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/tiny/tiny_04/tiny_04.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "75.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "25.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2301.0"
+  "AttackDamageMax"        "2304.0"
+  "AttackRate"             "1.5"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "100000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "493" }
+          "2" { "ItemDef" "494" }
+          "3" { "ItemDef" "495" }
+          "4" { "ItemDef" "496" }
+          "5" { "ItemDef" "497" }
+          "6" { "ItemDef" "516" }
+      }
+  }
+  }
+
+  "creep_rock_crystal_giant"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/tiny/tiny_04/tiny_04.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/tiny/tiny_04/tiny_04.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "76.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "25.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2401.0"
+  "AttackDamageMax"        "2404.0"
+  "AttackRate"             "1.2"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "110000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6886" }
+          "2" { "ItemDef" "6998" }
+          "3" { "ItemDef" "6999" }
+          "4" { "ItemDef" "7000" }
+          "5" { "ItemDef" "7005" }
+      }
+  }
+  }
+
+  "creep_cursed_ent"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/furion/treant/primeval_treant/primeval_treant.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/furion/treant/primeval_treant/primeval_treant.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "62.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "9.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1561.0"
+  "AttackDamageMax"        "1562.0"
+  "AttackRate"             "1.95"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "68000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_plague_ent"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "64.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "8.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "671.0"
+  "AttackDamageMax"        "672.0"
+  "AttackRate"             "0.25"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "64000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "boss_defiled_ent"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/treant_protector/treant_protector.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/treant_protector/treant_protector.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "64.0"
+  "ModelScale"             "2.0"
+  "ArmorPhysical"          "30.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "35.0"
+  "BountyGoldMax"          "38.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2151.0"
+  "AttackDamageMax"        "2152.0"
+  "AttackRate"             "0.95"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "180000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "8425" }
+          "2" { "ItemDef" "8427" }
+          "3" { "ItemDef" "8428" }
+          "4" { "ItemDef" "8429" }
+      }
+  }
+  }
+
+  "creep_owl_bear"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_vulture_a/n_creep_vulture_a.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_vulture_a/n_creep_vulture_a.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "65.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "32.0"
+  "MagicalResistance"      "50.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1151.0"
+  "AttackDamageMax"        "1157.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "71000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_owl_bear_mage"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_vulture_b/n_creep_vulture_b.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_vulture_b/n_creep_vulture_b.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "65.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "27.0"
+  "MagicalResistance"      "40.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "4.0"
+  "BountyGoldMax"          "5.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "881.0"
+  "AttackDamageMax"        "887.0"
+  "AttackRate"             "0.35"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "69000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "32000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/broodmother/spiderling.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/broodmother/spiderling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "66.0"
+  "ModelScale"             "1.2"
+  "ArmorPhysical"          "24.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "931.0"
+  "AttackDamageMax"        "932.0"
+  "AttackRate"             "0.55"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "80000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_silkworm"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/broodmother/spiderling/elder_blood_heir_of_elder_blood/elder_blood_heir_of_elder_blood.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/broodmother/spiderling/elder_blood_heir_of_elder_blood/elder_blood_heir_of_elder_blood.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "67.0"
+  "ModelScale"             "2.2"
+  "ArmorPhysical"          "20.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "1151.0"
+  "AttackDamageMax"        "1155.0"
+  "AttackRate"             "1.6"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "48000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_killer"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/broodmother/spiderling.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/broodmother/spiderling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "67.0"
+  "ModelScale"             "1.8"
+  "ArmorPhysical"          "24.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1021.0"
+  "AttackDamageMax"        "1022.0"
+  "AttackRate"             "0.55"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "88000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_crusher"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/broodmother/spiderling.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/broodmother/spiderling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "69.0"
+  "ModelScale"             "2.2"
+  "ArmorPhysical"          "26.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1401.0"
+  "AttackDamageMax"        "1402.0"
+  "AttackRate"             "0.55"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "95000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_smart"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/broodmother/spiderling/the_glacial_creeper_creepling/the_glacial_creeper_creepling.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/broodmother/spiderling/the_glacial_creeper_creepling/the_glacial_creeper_creepling.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "68.0"
+  "ModelScale"             "2.2"
+  "ArmorPhysical"          "18.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "1341.0"
+  "AttackDamageMax"        "1344.0"
+  "AttackRate"             "2.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "90000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "30000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_spider_silker"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/items/broodmother/spiderling/elder_blood_heir_of_elder_blood/elder_blood_heir_of_elder_blood.vmdl" 
+      "precache"
+       {
+          "model"  "models/items/broodmother/spiderling/elder_blood_heir_of_elder_blood/elder_blood_heir_of_elder_blood.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "68.0"
+  "ModelScale"             "2.4"
+  "ArmorPhysical"          "24.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "1171.0"
+  "AttackDamageMax"        "1175.0"
+  "AttackRate"             "1.4"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "88000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "city_guard_1"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "0.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "0.0"
+  "BountyGoldMax"          "0.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "12.0"
+  "AttackDamageMax"        "13.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "420.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "4154" }
+      }
+  }
+  }
+
+  "city_guard_2"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "4.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "0.0"
+  "BountyGoldMax"          "0.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "92.0"
+  "AttackDamageMax"        "93.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "11500.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "4154" }
+      }
+  }
+  }
+
+  "city_guard_3"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/dragon_knight/dragon_knight.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "3.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "0.0"
+  "BountyGoldMax"          "0.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "111.0"
+  "AttackDamageMax"        "112.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "9000.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "4154" }
+      }
+  }
+  }
+
+  "city_archer_1"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/drow/drow_base.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/drow/drow_base.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "1.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "0.0"
+  "BountyGoldMax"          "0.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "16.0"
+  "AttackDamageMax"        "18.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "310.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "4166" }
+      }
+  }
+  }
+
+  "elite_execute"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/spectre/spectre.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/spectre/spectre.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "24.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "2.0"
+  "BountyGoldMax"          "3.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "81.0"
+  "AttackDamageMax"        "88.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "6400.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "323" }
+          "2" { "ItemDef" "324" }
+          "3" { "ItemDef" "395" }
+          "4" { "ItemDef" "325" }
+      }
+  }
+  }
+
+  "elite_dark_librarian"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/warlock/warlock.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/warlock/warlock.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "24.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "101.0"
+  "AttackDamageMax"        "108.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "5800.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "2000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "8076" }
+          "2" { "ItemDef" "8077" }
+          "3" { "ItemDef" "8078" }
+          "4" { "ItemDef" "8079" }
+          "5" { "ItemDef" "8080" }
+      }
+  }
+  }
+
+  "elite_dark_guard"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/nightstalker/nightstalker_night.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/nightstalker/nightstalker_night.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "25.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "1.5"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "3.0"
+  "BountyGoldMax"          "4.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "96.0"
+  "AttackDamageMax"        "103.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "10400.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "337" }
+          "2" { "ItemDef" "338" }
+          "3" { "ItemDef" "339" }
+      }
+  }
+  }
+
+  "boss_dark_mage"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/rubick/rubick.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/rubick/rubick.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "25.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "4.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "35.0"
+  "BountyGoldMax"          "56.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "316.0"
+  "AttackDamageMax"        "323.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "44000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "36000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_bristle_warrior"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/bristleback/bristleback.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/bristleback/bristleback.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "83.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "30.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2151.0"
+  "AttackDamageMax"        "2153.0"
+  "AttackRate"             "1.5"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "100000.0"
+  "StatusHealthRegen"      "9.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "436" }
+          "2" { "ItemDef" "437" }
+          "3" { "ItemDef" "438" }
+          "4" { "ItemDef" "439" }
+          "5" { "ItemDef" "440" }
+      }
+  }
+  }
+
+  "creep_bristle_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/bristleback/bristleback.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/bristleback/bristleback.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "82.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "25.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "1751.0"
+  "AttackDamageMax"        "1753.0"
+  "AttackRate"             "0.4"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "95000.0"
+  "StatusHealthRegen"      "7.0"
+  "StatusMana"             "15000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "436" }
+          "2" { "ItemDef" "437" }
+          "3" { "ItemDef" "439" }
+          "4" { "ItemDef" "440" }
+      }
+  }
+  }
+
+  "creep_bristle_shaman"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/bristleback/bristleback.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/bristleback/bristleback.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "84.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "25.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "2251.0"
+  "AttackDamageMax"        "2253.0"
+  "AttackRate"             "1.0"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "90000.0"
+  "StatusHealthRegen"      "7.0"
+  "StatusMana"             "30000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "437" }
+          "2" { "ItemDef" "439" }
+          "3" { "ItemDef" "440" }
+      }
+  }
+  }
+
+  "creep_bristle_bearer"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/bristleback/bristleback.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/bristleback/bristleback.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "85.0"
+  "ModelScale"             "1.1"
+  "ArmorPhysical"          "30.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2251.0"
+  "AttackDamageMax"        "2253.0"
+  "AttackRate"             "1.7"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "105000.0"
+  "StatusHealthRegen"      "11.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "8391" }
+          "2" { "ItemDef" "437" }
+          "3" { "ItemDef" "439" }
+          "4" { "ItemDef" "440" }
+      }
+  }
+  }
+
+  "boss_harn_cannibal"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/bristleback/bristleback.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/bristleback/bristleback.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "86.0"
+  "ModelScale"             "1.4"
+  "ArmorPhysical"          "35.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "80.0"
+  "BountyGoldMax"          "84.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "5201.0"
+  "AttackDamageMax"        "5203.0"
+  "AttackRate"             "0.7"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "200000.0"
+  "StatusHealthRegen"      "12.0"
+  "StatusMana"             "30000.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "5762" }
+          "2" { "ItemDef" "5763" }
+          "3" { "ItemDef" "5764" }
+          "4" { "ItemDef" "5765" }
+          "5" { "ItemDef" "5766" }
+      }
+  }
+  }
+
+  "creep_wasteland_hunter"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/huskar/huskar.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/huskar/huskar.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "89.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "30.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "3001.0"
+  "AttackDamageMax"        "3004.0"
+  "AttackRate"             "0.7"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "120000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "10000.0"
+  "StatusManaRegen"        "4.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "268" }
+          "2" { "ItemDef" "269" }
+          "3" { "ItemDef" "270" }
+          "4" { "ItemDef" "271" }
+          "5" { "ItemDef" "272" }
+      }
+  }
+  }
+
+  "creep_wasteland_doctor"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/witchdoctor/witchdoctor.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/witchdoctor/witchdoctor.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "88.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "32.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "2626.0"
+  "AttackDamageMax"        "2633.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "115000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "40000.0"
+  "StatusManaRegen"        "6.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "94" }
+          "2" { "ItemDef" "95" }
+          "3" { "ItemDef" "96" }
+          "4" { "ItemDef" "97" }
+          "5" { "ItemDef" "8367" }
+      }
+  }
+  }
+
+  "creep_wasteland_adherent"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/huskar/huskar.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/huskar/huskar.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "90.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "33.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "3251.0"
+  "AttackDamageMax"        "3254.0"
+  "AttackRate"             "0.5"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "135000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "10000.0"
+  "StatusManaRegen"        "4.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "4906" }
+          "2" { "ItemDef" "4907" }
+          "3" { "ItemDef" "4908" }
+          "4" { "ItemDef" "4909" }
+          "5" { "ItemDef" "4910" }
+      }
+  }
+  }
+
+  "creep_wasteland_hunter_2"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/batrider/batrider.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/batrider/batrider.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "89.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "33.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "5.0"
+  "BountyGoldMax"          "6.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "2901.0"
+  "AttackDamageMax"        "2904.0"
+  "AttackRate"             "0.7"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "125000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "10000.0"
+  "StatusManaRegen"        "4.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "375" }
+          "2" { "ItemDef" "376" }
+          "3" { "ItemDef" "377" }
+          "4" { "ItemDef" "378" }
+      }
+  }
+  }
+
+  "boss_TasGundor"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/shadowshaman/shadowshaman.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/shadowshaman/shadowshaman.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "91.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "45.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "150.0"
+  "BountyGoldMax"          "153.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "8451.0"
+  "AttackDamageMax"        "8454.0"
+  "AttackRate"             "0.8"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "370000.0"
+  "StatusHealthRegen"      "13.0"
+  "StatusMana"             "70000.0"
+  "StatusManaRegen"        "4.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "246" }
+          "2" { "ItemDef" "247" }
+          "3" { "ItemDef" "248" }
+          "4" { "ItemDef" "249" }
+          "5" { "ItemDef" "250" }
+          "6" { "ItemDef" "251" }
+      }
+  }
+  }
+
+  "creep_hell_scorpion"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/sand_king/sand_king.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/sand_king/sand_king.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "92.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "15.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "6.0"
+  "BountyGoldMax"          "7.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "2801.0"
+  "AttackDamageMax"        "2802.0"
+  "AttackRate"             "0.45"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "120000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "180" }
+          "2" { "ItemDef" "198" }
+          "3" { "ItemDef" "199" }
+          "4" { "ItemDef" "200" }
+          "5" { "ItemDef" "201" }
+      }
+  }
+  }
+
+  "creep_lone_assasin"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/lone_druid/lone_druid.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/lone_druid/lone_druid.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "94.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "15.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "6.0"
+  "BountyGoldMax"          "7.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "3201.0"
+  "AttackDamageMax"        "3202.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "135000.0"
+  "StatusHealthRegen"      "15.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6648" }
+          "2" { "ItemDef" "6649" }
+          "3" { "ItemDef" "6830" }
+          "4" { "ItemDef" "6832" }
+          "5" { "ItemDef" "6859" }
+      }
+  }
+  }
+
+  "creep_lone_mage"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/lone_druid/lone_druid.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/lone_druid/lone_druid.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "95.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "15.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "6.0"
+  "BountyGoldMax"          "7.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "4101.0"
+  "AttackDamageMax"        "4103.0"
+  "AttackRate"             "1.8"
+  "AttackRange"            "600.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "130000.0"
+  "StatusHealthRegen"      "0.5"
+  "StatusMana"             "30000.0"
+  "StatusManaRegen"        "1.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6648" }
+          "2" { "ItemDef" "6649" }
+          "3" { "ItemDef" "6830" }
+          "4" { "ItemDef" "6832" }
+          "5" { "ItemDef" "6859" }
+      }
+  }
+  }
+
+  "elite_lone_assasin"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/lone_druid/lone_druid.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/lone_druid/lone_druid.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "96.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "16.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "6.0"
+  "BountyGoldMax"          "7.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "4201.0"
+  "AttackDamageMax"        "4202.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "150000.0"
+  "StatusHealthRegen"      "15.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6648" }
+          "2" { "ItemDef" "6649" }
+          "3" { "ItemDef" "6830" }
+          "4" { "ItemDef" "6832" }
+          "5" { "ItemDef" "6859" }
+      }
+  }
+  }
+
+  "boss_kair_invader"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/lone_druid/lone_druid.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/lone_druid/lone_druid.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "98.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "20.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "350.0"
+  "BountyGoldMax"          "354.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "9301.0"
+  "AttackDamageMax"        "9302.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "350000.0"
+  "StatusHealthRegen"      "15.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "6648" }
+          "2" { "ItemDef" "6649" }
+          "3" { "ItemDef" "6830" }
+          "4" { "ItemDef" "6832" }
+          "5" { "ItemDef" "6859" }
+      }
+  }
+  }
+
+  "creep_fire_lizard"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "93.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "15.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "8.0"
+  "BountyGoldMax"          "9.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "3433.0"
+  "AttackDamageMax"        "3454.0"
+  "AttackRate"             "1.4"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "140000.0"
+  "StatusHealthRegen"      "2.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "boss_unique_lizard"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl" 
+      "precache"
+       {
+          "model"  "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "98.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "22.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "150.0"
+  "BountyGoldMax"          "174.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_RANGED_ATTACK"
+  "AttackDamageMin"        "11153.0"
+  "AttackDamageMax"        "11174.0"
+  "AttackRate"             "1.4"
+  "AttackRange"            "500.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "400000.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+  "creep_lowest_demon"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/faceless_void/faceless_void.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/faceless_void/faceless_void.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "98.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "16.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "7.0"
+  "BountyGoldMax"          "8.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "4001.0"
+  "AttackDamageMax"        "4002.0"
+  "AttackRate"             "0.85"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "150500.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  "Creature"
+  {
+      "AttachWearables"
+      {
+          "1" { "ItemDef" "15" }
+          "2" { "ItemDef" "90" }
+          "3" { "ItemDef" "91" }
+          "4" { "ItemDef" "92" }
+          "5" { "ItemDef" "93" }
+      }
+  }
+  }
+
+  "boss_hell_keeper"
+  {
+  "BaseClass"              "npc_dota_creature"
+  "Model"                  "models/heroes/doom/doom.vmdl" 
+      "precache"
+       {
+          "model"  "models/heroes/doom/doom.vmdl"
+       }
+  "SoundSet"               "n_creep_Ranged"
+  "GameSoundFile"          "soundevents/game_sounds_creeps.vsndevts"
+  "Level"                  "100.0"
+  "ModelScale"             "1.0"
+  "ArmorPhysical"          "24.0"
+  "MagicalResistance"      "0.0"
+  "MovementTurnRate"       "1.0"
+  "BountyGoldMin"          "400.0"
+  "BountyGoldMax"          "403.0"
+  "AttackCapabilities"     "DOTA_UNIT_CAP_MELEE_ATTACK"
+  "AttackDamageMin"        "13501.0"
+  "AttackDamageMax"        "13502.0"
+  "AttackRate"             "1.35"
+  "AttackRange"            "150.0"
+  "AttackRangeBuffer"         "150"
+  "AttackAcquisitionRange"    "1"
+  "StatusHealth"           "550000.0"
+  "StatusHealthRegen"      "0.0"
+  "StatusMana"             "0.0"
+  "StatusManaRegen"        "0.0"
+  "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"
+  "MovementTurnRate"       "1.0"
+  "RingRadius"             "100.0"
+  "TeamName"               "DOTA_TEAM_NEUTRALS"
+  "CombatClassAttack"      "DOTA_COMBAT_CLASS_ATTACK_HERO"
+  "CombatClassDefend"      "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+  "UnitRelationshipClass"  "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+  "UseNeutralCreepBehavior"   "0"
+  "AutoAttacksByDefault"      0
+  }
+
+}

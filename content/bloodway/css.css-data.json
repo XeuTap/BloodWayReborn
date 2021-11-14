@@ -1,0 +1,7 @@
+{
+    "version": 1.1,
+    "properties": [{
+      "name": "horizontal-align",
+      "description": "Compiles down to `width` and `height`. See details at https://github.com/postcss/postcss-size"
+    }]
+  }

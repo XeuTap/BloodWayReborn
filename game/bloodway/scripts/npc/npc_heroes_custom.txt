@@ -1,0 +1,1545 @@
+"DOTAHeroes"
+{
+  "npc_dota_hero_base"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"		"models/dev/error.vmdl"
+		"SoundSet"		"0"
+		"Enabled"		"0"
+		"Level"		"1"
+		"BotImplemented"		"0"
+		"NewHero"		"0"
+		"HeroPool1"		"0"
+		"HeroUnlockOrder"		"1"
+		"CMEnabled"		"0"
+		"CMTournamentIgnore"		"0"
+		"new_player_enable"		"0"
+		"Legs"	"2"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"					""										// Ability 1.
+		"Ability2"					""										// Ability 2.
+		"Ability3"					""										// Ability 3.
+		"Ability4"					""										// Ability 4.
+		"Ability5"					""
+		"Ability6"					""										// Ability 6 - Extra.
+		"Ability7"					""										// Ability 7 - Extra.
+		"Ability8"					""										// Ability 8 - Extra.
+		"Ability9"					""
+		"Ability25"		"special_bonus_attributes"
+
+		"AbilityTalentStart"		"10"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"		"-1"
+		"MagicalResistance"		"25"
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"BaseAttackSpeed"		"100"
+		"AttackDamageMin"		"1"
+		"AttackDamageMax"		"1"
+		"AttackDamageType"		"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.750000"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"600"
+		"ProjectileModel"		"particles/base_attacks/ranged_hero.vpcf"
+		"ProjectileSpeed"		"900"
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"		"62"
+		"BountyGoldMin"		"0"
+		"BountyGoldMax"		"0"
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"RingRadius"		"70"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"		"300"
+		"MovementTurnRate"		"0.600000"
+		"HasAggressiveStance"		"0"
+
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealth"		"200"
+		"StatusMana"		"75"
+		"StatusManaRegen"	"0"
+		"StatusHealthRegen"		"0.25"
+
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"		"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"		"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"		"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+
+		//Inventory
+		"HasInventory"		"1"
+
+		//Voice
+		"VoiceBackgroundSound"		""
+		"HealthBarOffset"		"200" 		
+		"IdleExpression"		"scenes/default_idle.vcd"
+		"IdleSoundLoop"				""
+		"AbilityDraftDisabled"		"0"
+		"ARDMDisabled"		"0"
+		"HUD"
+		{
+			"StatusHUD"
+			{
+				"StatusStrength"
+				{
+					"LocalizeToken"		"#DOTA_StrengthStatus"
+					"Parameters"		"Traits:Strength"
+					"HUDName"		"unitstrength"
+				}
+				"StatusAgility"
+				{
+					"LocalizeToken"		"#DOTA_AgilityStatus"
+					"Parameters"		"Traits:Agility"
+					"HUDName"		"unitagility"
+				}
+				"StatusIntellect"
+				{
+					"LocalizeToken"		"#DOTA_IntellectStatus"
+					"Parameters"		"Traits:Intellect"
+					"HUDName"		"unitintellect"
+				}
+			}
+		}
+	}
+
+  "npc_dota_hero_ancient_apparition_barebones"
+  {
+    "AbilityLayout"     "6"
+    "override_hero"     "npc_dota_hero_ancient_apparition"
+    "SoundSet"          "0" 
+    "Ability1"        "example_ability" 
+    "Ability2"        "barebones_empty2" 
+    "Ability3"        "barebones_empty3" 
+    "Ability4"        "barebones_empty4"
+    "Ability5"        "barebones_empty5"
+    "Ability6"        "barebones_empty6"
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "0"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+    "AttackDamageMin"     "1"                   // Damage range min.
+    "AttackDamageMax"     "1"                   // Damage range max.
+
+    //"AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "0"                   // Base strength
+    "AttributeStrengthGain"   "0"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "0"                   // Base intelligence
+    "AttributeIntelligenceGain" "0"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "0"                   // Base agility
+    "AttributeAgilityGain"    "0"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "1000"                 // Base health.
+    "StatusHealthRegen"     "0.0"                 // Health regeneration rate.
+    "StatusMana"        "400"                   // Base mana.
+    "StatusManaRegen"     "100.0"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_ranger_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_windrunner"
+    "SoundSet"          "Hero_Windrunner"
+    "Ability1"        "ranger_track" 
+    "Ability2"        "ranger_stun_arrow" 
+    "Ability3"        "ranger_critical_hit" 
+    "Ability4"        "gain_agility"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "0"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "550"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"     "2"                   // Damage range min.
+    "AttackDamageMax"     "3"                   // Damage range max.
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_AGILITY"
+    "AttributeBaseStrength"   "10"                   // Base strength
+    "AttributeStrengthGain"   "0.9"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "8"                   // Base intelligence
+    "AttributeIntelligenceGain" "0.6"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "12"                   // Base agility
+    "AttributeAgilityGain"    "1.1"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "320"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "50"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "0"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_hunter"
+	{ 
+    "BaseClass"   "npc_dota_hero"
+		"Model"		"models/heroes/windrunner/windrunner.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/windrunner/windrunner.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"150"
+	"HeroOrderID"	"151"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "hunter_stun_arrow" 
+    "Ability2"        "hunter_missile_arrow"
+    "Ability3"        "hunter_critical_hit"
+    "Ability4"        "hunter_accurancy_aura"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"600"
+	"HasAggressiveStance"		"1"
+	"AttackSpeedActivityModifiers"
+	{
+		"fast"		"200"
+	}
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"		"18"
+	"AttributeStrengthGain"		"1.4"
+	"AttributeBaseIntelligence"		"14"
+	"AttributeIntelligenceGain"		"1.2"
+	"AttributeBaseAgility"		"24"
+	"AttributeAgilityGain"		"2.400000"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "140"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "42"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"back"
+				"SlotText"		"#LoadoutSlot_Back"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"offhand_weapon"
+				"SlotText"		"#LoadoutSlot_Quiver"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}	
+	}
+
+  "npc_dota_hero_cold_ranger"
+	{
+    "BaseClass"   "npc_dota_hero"
+		"Model"		"models/heroes/drow/drow_base.vmdl"
+		"IdleExpression"		"scenes/drowranger/drowranger_exp_idle_01.vcd"
+		"SoundSet"		"Hero_DrowRanger"
+		"PickSound"		"drowranger_dro_spawn_03"
+		"BanSound"		"drowranger_dro_anger_01"
+		"Enabled"		"1"
+		"BotImplemented"		"1"
+		"HeroPool1"		"1"
+		"HeroPool2"		"1"
+		"HeroUnlockOrder"		"0"
+		"Role"			"Carry,Disabler,Pusher"
+		"Rolelevels"	"2,1,1"
+		"Complexity"	"1"
+		"Team"		"Good"
+		"HeroID"		"152"
+		"HeroOrderID"	"153"
+		"ModelScale"		"0.970000"
+		"LoadoutScale"		"1.100000"
+		"HeroGlowColor"		"1 60 246"
+		"CMEnabled"		"1"
+		"workshop_guide_name"		"Drow Ranger"
+		"LastHitChallengeRival"		"npc_dota_hero_windrunner"
+		"HeroSelectSoundEffect"		"Hero_DrowRanger.Pick"
+		"GibType"		"default"
+		"new_player_enable"		"1"
+		"SimilarHeroes"	"48,109,63"
+		"Ability1"		"cold_ranger_stun_arrow"
+		"Ability2"		"cold_ranger_multishot"
+		"Ability3"		"cold_ranger_dominance"
+		"Ability4"		"cold_ranger_track"
+		"Ability5"		"cold_ranger_cold_touch"
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"		"-12"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"112"
+		"AttackDamageMax"		"118"
+		"AttackRate"		"1.700000"
+		"BaseAttackSpeed"		"100"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"625"
+		"ProjectileModel"		"particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+		"ProjectileSpeed"		"1250"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"55"
+		"AttributeStrengthGain"		"2.15"
+		"AttributeBaseIntelligence"		"68"
+		"AttributeIntelligenceGain"		"2.95"
+		"AttributeBaseAgility"		"90"
+		"AttributeAgilityGain"		"3.25"
+		"StatusHealthRegen"		"0.25"
+		"VisionDaytimeRange"		"1800"
+		"MovementSpeed"		"295"
+		"MovementTurnRate"		"0.7000"
+		"HasAggressiveStance"		"0"
+		"StatusHealth"        "525"                 // Base health.
+    	"StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    	"StatusMana"        "204"                   // Base mana.
+    	"StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"particle_folder"		"particles/units/heroes/hero_drow"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_drow/drow_loadout.vpcf"		"loadout"
+			}
+		}
+	}
+
+  "npc_dota_hero_pathfinder"
+  {
+  "BaseClass"   "npc_dota_hero"
+	"Model"		"models/items/windrunner/windrunner_arcana/wr_arcana_base.vmdl"
+  "precache"
+     {
+        "model"  "models/items/windrunner/windrunner_arcana/wr_arcana_base.vmdl"
+     }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"154"
+	"HeroOrderID"	"155"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "pathfinder_rain_of_fire_arrows" 
+    "Ability2"        "pathfinder_gunpowder"
+    "Ability3"        "patfinder_critical_hit"
+    "Ability4"        "pathfinder_powershot"
+    "Ability5"        "pathfinder_sniper_mode"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"600"
+	"HasAggressiveStance"		"1"
+	"AttackSpeedActivityModifiers"
+	{
+		"fast"		"200"
+	}
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"		"60"
+	"AttributeStrengthGain"		"2.00"
+	"AttributeBaseIntelligence"		"50"
+	"AttributeIntelligenceGain"		"2.30"
+	"AttributeBaseAgility"		"94"
+	"AttributeAgilityGain"		"3.5"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "140"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "42"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  }
+
+  "npc_dota_hero_huntsman"
+	{ 
+    "BaseClass"   "npc_dota_hero"
+		"Model"		"models/heroes/windrunner/windrunner.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/windrunner/windrunner.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"156"
+	"HeroOrderID"	"157"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "huntsman_track"
+    "Ability2"        "huntsman_wind_arrow"
+    "Ability3"        "huntsman_missile_arrow"
+    "Ability4"        "huntsman_accurate_shot"
+    "Ability5"        "huntsman_accurancy_aura"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"600"
+	"HasAggressiveStance"		"1"
+	"AttackSpeedActivityModifiers"
+	{
+		"fast"		"200"
+	}
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"		"60"
+	"AttributeStrengthGain"		"2.4"
+	"AttributeBaseIntelligence"		"50"
+	"AttributeIntelligenceGain"		"2.2"
+	"AttributeBaseAgility"		"95"
+	"AttributeAgilityGain"		"3.4"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "140"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "42"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+	}
+
+  "npc_dota_hero_warrior_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_dragon_knight"
+    "SoundSet"          "Hero_DragonKnight"
+    "Ability1"        "warrior_purification" 
+    "Ability2"        "warrior_force" 
+    "Ability3"        "warrior_shield" 
+    "Ability4"        "warrior_train"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-1"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "150"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"     "17"                   // Damage range min.
+    "AttackDamageMax"     "27"                   // Damage range max.
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "15"                   // Base strength
+    "AttributeStrengthGain"   "1.10"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "5"                   // Base intelligence
+    "AttributeIntelligenceGain" "0.4"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "9"                   // Base agility
+    "AttributeAgilityGain"    "0.7"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "175"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "15"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+	"DisableWearables" "1"
+  }
+
+  "npc_dota_hero_defender"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/dragon_knight/dragon_knight.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"158"
+	"HeroOrderID"	"159"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "defender_shield"
+    "Ability2"        "defender_dragon_tail"
+    "Ability3"        "defender_blessing"
+    "Ability4"        "defender_blind"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"		"25"
+	"AttributeStrengthGain"		"2.5"
+	"AttributeBaseIntelligence"		"15"
+	"AttributeIntelligenceGain"		"1.34"
+	"AttributeBaseAgility"		"13"
+	"AttributeAgilityGain"		"1.0"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "325"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "45"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  }
+
+  "npc_dota_hero_patron"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/dragon_knight/dragon_knight.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/dragon_knight/dragon_knight.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"160"
+	"HeroOrderID"	"161"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "patron_shield"
+    "Ability2"        "patron_hammer"
+    "Ability3"        "patron_armor_aura"
+    "Ability4"        "patron_invicibility"
+    "Ability5"        "patron_taunt_call"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"		"120"
+	"AttributeStrengthGain"		"3.84"
+	"AttributeBaseIntelligence"		"55"
+	"AttributeIntelligenceGain"		"1.9"
+	"AttributeBaseAgility"		"40"
+	"AttributeAgilityGain"		"1.6"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "1100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "165"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  }
+
+  "npc_dota_hero_sun_warrior"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/omniknight/omniknight.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/omniknight/omniknight.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"162"
+	"HeroOrderID"	"163"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "sun_warrior_purification"
+    "Ability2"        "sun_warrior_justice_hammer"
+    "Ability3"        "sun_warrior_blessing"
+    "Ability4"        "sun_warrior_bless_buff"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"		"22"
+	"AttributeStrengthGain"		"2.10"
+	"AttributeBaseIntelligence"		"21"
+	"AttributeIntelligenceGain"		"1.70"
+	"AttributeBaseAgility"		"16"
+	"AttributeAgilityGain"		"1.10"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "1100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "165"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  	}
+
+	"npc_dota_hero_paladin"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/omniknight/omniknight.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/omniknight/omniknight.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"164"
+	"HeroOrderID"	"165"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "paladin_purification"
+    "Ability2"        "paladin_justice_hammer"
+    "Ability3"        "paladin_divinity_flare"
+    "Ability4"        "paladin_bless_buff"
+    "Ability5"        "paladin_holy_buff"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"		"1250"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"		"85"
+	"AttributeStrengthGain"		"3.25"
+	"AttributeBaseIntelligence"		"75"
+	"AttributeIntelligenceGain"		"3.60"
+	"AttributeBaseAgility"		"48"
+	"AttributeAgilityGain"		"1.50"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "1100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "165"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  	}
+
+	"npc_dota_hero_conqueror"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/sven/sven.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/sven/sven.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"166"
+	"HeroOrderID"	"167"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        "conqueror_hit"
+    "Ability2"        "conqueror_power_buff"
+    "Ability3"        "conqueror_roar"
+    "Ability4"        "conqueror_bless_buff"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"		"24"
+	"AttributeStrengthGain"		"2.20"
+	"AttributeBaseIntelligence"		"13"
+	"AttributeIntelligenceGain"		"0.90"
+	"AttributeBaseAgility"		"22"
+	"AttributeAgilityGain"		"2.40"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "1100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "165"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  	}
+
+	"npc_dota_hero_invader"
+  {
+	"BaseClass"   "npc_dota_hero"
+	"Model"		"models/heroes/sven/sven.vmdl"
+      "precache"
+         {
+            "model"  "models/heroes/sven/sven.vmdl"
+         }
+	"IdleExpression"		"scenes/windrunner/windrunner_exp_idle_01.vcd"
+	"SoundSet"		"Hero_Windrunner"
+	"PickSound"		"windrunner_wind_spawn_01"
+	"BanSound"		"windrunner_wind_anger_01"
+	"Enabled"		"1"
+	"HeroPool1"				"1"
+	"HeroPool2"				"1"
+	"HeroUnlockOrder"		"2"
+	"Role"			"Carry,Support,Disabler,Escape,Nuker"
+	"Rolelevels"	"1,1,1,1,1"
+	"Complexity"	"2"
+	"Team"		"Good"
+	"HeroID"		"168"
+	"HeroOrderID"	"169"
+	"BotImplemented"		"0"
+	"ModelScale"		"0.980000"
+	"LoadoutScale"		"1.100000"
+	"SpectatorLoadoutScale" "1.1"
+	"HeroGlowColor"		"185 220 20"
+	"CMEnabled"		"1"
+	"NameAliases"		"wr"
+	"workshop_guide_name"		"Windranger"
+	"new_player_enable"		"1"
+	"SimilarHeroes"	"128,123,9"
+	"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+	"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+	"GibType"		"default"
+    "Ability1"        ""
+    "Ability2"        ""
+    "Ability3"        ""
+    "Ability4"        ""
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+	"ArmorPhysical"		"-3.5"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"		"36"
+	"AttackDamageMax"		"42"
+	"AttackRate"		"1.500000"
+	"AttackAnimationPoint"		"0.400000"
+	"AttackAcquisitionRange"		"800"
+	"AttackRange"		"150"
+	"HasAggressiveStance"		"1"
+	"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"		"90"
+	"AttributeStrengthGain"		"3.50"
+	"AttributeBaseIntelligence"		"42"
+	"AttributeIntelligenceGain"		"2.80"
+	"AttributeBaseAgility"		"95"
+	"AttributeAgilityGain"		"3.90"
+	"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+	"MovementSpeed"		"320"
+	"MovementTurnRate"		"0.800000"
+	"particle_folder"		"particles/units/heroes/hero_windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"VoiceFile"		"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+    "StatusHealth"        "1100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "165"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}	
+  	}
+
+  "npc_dota_hero_priest_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_lina"
+    "SoundSet"          "Hero_Lina"
+    "Ability1"        "priest_heal" 
+    "Ability2"        "priest_revenge" 
+    "Ability3"        "priest_pain_shadows" 
+    "Ability4"        "priest_spawn_shadow"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-2"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "450"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"     "17"                   // Damage range min.
+    "AttackDamageMax"     "27"                   // Damage range max.
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
+    "AttributeBaseStrength"   "10"                   // Base strength
+    "AttributeStrengthGain"   "0.90"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "10"                   // Base intelligence
+    "AttributeIntelligenceGain" "1.25"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "6"                   // Base agility
+    "AttributeAgilityGain"    "0.35"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "100"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "90"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_mage_1"
+  {
+    "AbilityLayout"     "5"
+    "override_hero"     "npc_dota_hero_crystal_maiden"
+    "SoundSet"          "hero_Crystal"
+    "Ability1"        "mage_fireblast" 
+    "Ability2"        "mage_ice_star" 
+    "Ability3"        "mage_arcane_explosion" 
+    "Ability4"        "mage_dire_curse"
+    "Ability5"        "mage_stat_gain"
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-2"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "500"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"     "16"                   // Damage range min.
+    "AttackDamageMax"     "22"                   // Damage range max.
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
+    "AttributeBaseStrength"   "11"                   // Base strength
+    "AttributeStrengthGain"   "0.90"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "14"                   // Base intelligence
+    "AttributeIntelligenceGain" "1.25"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "6"                   // Base agility
+    "AttributeAgilityGain"    "0.40"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "105"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "90"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_druid_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_furion"
+    "SoundSet"          "Hero_Furion"
+    "Ability1"        "druid_heal" 
+    "Ability2"        "druid_moon_blink" 
+    "Ability3"        "druid_beast_rage" 
+    "Ability4"        "druid_nature_origin"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-2"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "500"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"     "14"                   // Damage range min.
+    "AttackDamageMax"     "20"                   // Damage range max.
+    "AttackRate"                 "2.23"
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
+    "AttributeBaseStrength"   "11"                   // Base strength
+    "AttributeStrengthGain"   "0.90"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "12"                   // Base intelligence
+    "AttributeIntelligenceGain" "1.05"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "7"                   // Base agility
+    "AttributeAgilityGain"    "0.55"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "130"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "36"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_minotaur_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_elder_titan"
+    "SoundSet"          "Hero_ElderTitan"
+    "Ability1"        "minotaur_heal" 
+    "Ability2"        "minotaur_earth_crack" 
+    "Ability3"        "minotaur_zipper_chain" 
+    "Ability4"        "minotaur_axe_mastery"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-2"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "150"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"     "14"                   // Damage range min.
+    "AttackDamageMax"     "20"                   // Damage range max.
+    "AttackRate"                 "2.43"
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_INTELLECT"
+    "AttributeBaseStrength"   "11"                   // Base strength
+    "AttributeStrengthGain"   "1.00"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "10"                   // Base intelligence
+    "AttributeIntelligenceGain" "1.00"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "4"                   // Base agility
+    "AttributeAgilityGain"    "0.35"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "135"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "30"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+
+  "npc_dota_hero_guardian_1"
+  {
+    "AbilityLayout"     "4"
+    "override_hero"     "npc_dota_hero_phantom_assassin"
+    "SoundSet"          "Hero_PhantomAssassin"
+    "Ability1"        "guardian_invis" 
+    "Ability2"        "guardian_poison"
+    "Ability3"        "guardian_armor"
+    "Ability4"        "guardian_posion_dagger"
+    "Ability5"        ""
+    "Ability6"        ""
+    "Ability7"        ""
+    "Ability8"        ""
+    "Ability9"        ""
+    "Ability10"       ""
+    "Ability11"       ""
+    "Ability12"       ""
+    "Ability13"       ""
+    "Ability14"       ""
+    "Ability15"       ""
+    "Ability16"       ""
+
+    "ArmorPhysical"       "-1.5"                 // Physical protection.
+    "MagicalResistance"       "0"                 // Magical protection (percentage).
+
+    "AttackRange"         "150"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"     "17"                   // Damage range min.
+    "AttackDamageMax"     "27"                   // Damage range max.
+    "AttackRate"                 "1.85"
+
+    "AttributePrimary"      "DOTA_ATTRIBUTE_AGILITY"
+    "AttributeBaseStrength"   "7"                   // Base strength
+    "AttributeStrengthGain"   "0.60"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "9"                   // Base intelligence
+    "AttributeIntelligenceGain" "0.70"                   // Intelligence bonus per level.
+    "AttributeBaseAgility"    "13"                   // Base agility
+    "AttributeAgilityGain"    "1.20"                   // Agility bonus per level.
+
+    "BountyXP"          "0"                 // Experience earn.
+    "BountyGoldMin"       "0"                   // Gold earned min.
+    "BountyGoldMax"       "0"                   // Gold earned max.
+
+    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
+    //"RingRadius"        "70"
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"       "360"                 // Speed.
+    "MovementTurnRate"      "1.0"                 // Turning rate.
+
+    "StatusHealth"        "60"                 // Base health.
+    "StatusHealthRegen"     "0.25"                 // Health regeneration rate.
+    "StatusMana"        "27"                   // Base mana.
+    "StatusManaRegen"     "0.01"                 // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"    "800"                  // Range of vision at night time.
+  }
+}

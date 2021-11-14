@@ -1,0 +1,2007 @@
+"DOTAAbilities"
+{
+  "item_containers_lua_pack"
+  {
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ID"              "1835"
+    "BaseClass"         "item_lua"
+    "AbilityTextureName"        "item_present"
+    "ScriptFile"          "libraries/abilities/item_containers_lua_pack.lua"
+    "MaxLevel"            "1"
+
+    "ItemCost"            "0"
+    "ItemPurchasable"          "0"
+    "ItemKillable"             "0"
+    "ItemDroppable"            "0"
+    "ItemSellable"             "0"
+    "ItemCanChangeContainer"   "0"
+    
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"        "0"
+
+    // Time   
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"       "0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"       "0 0 0 0"
+  }
+
+  //Shield
+  "item_example_item"
+  {
+    "ID"              "1836"
+    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO"
+    "BaseClass"           "item_datadriven"
+    "AbilityCastAnimation"      "ACT_DOTA_DISABLED"
+    "AbilityTextureName"      "item_example_item"
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"        "900"
+    "AbilityCastPoint"        "0.2"
+    "AbilityCooldown"       "13.0"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"       "100"
+    "ItemCost"            "750"
+    "ItemInitialCharges"      "0"
+    "ItemDroppable"         "1"
+    "ItemSellable"          "1"
+    "ItemRequiresCharges"     "0"
+    "ItemShareability"        "ITEM_NOT_SHAREABLE"
+    "ItemDeclarations"        "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+    
+    "MaxUpgradeLevel"       "1"
+    "ItemBaseLevel"         "1"
+    
+    "precache"
+    {
+      "particle"              "particles/frostivus_herofx/queen_shadow_strike_linear_parent.vpcf"
+      "particle_folder"       "particles/test_particle"
+      "soundfile"             "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
+    }
+    "OnSpellStart"
+    {
+      "LinearProjectile"
+      {
+        "EffectName"      "particles/frostivus_herofx/queen_shadow_strike_linear_parent.vpcf"
+        "MoveSpeed"       "%speed"
+        //"StartPosition"   "attach_attack1"
+        "FixedDistance"   "%distance"
+        "StartRadius"     "%radius"
+        "EndRadius"       "%radius"
+        "TargetTeams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "TargetTypes"     "DOTA_UNIT_TARGET_HERO"
+        "TargetFlags"     "DOTA_UNIT_TARGET_FLAG_NONE"
+        "HasFrontalCone"    "0"
+        "ProvidesVision"    "0"
+        "VisionRadius"      "0"
+      }
+      "FireSound"
+      {
+        "EffectName"    "Hero_Abaddon.AphoticShield.Cast"
+        "Target"        "CASTER"
+      }
+      "ApplyModifier"
+      {
+        "Target"      "CASTER"
+        "ModifierName"  "modifier_item_shield"
+      }
+    }
+    
+    "OnProjectileHitUnit"
+    {     
+      "DeleteOnHit" "0"
+      "Damage"
+      {
+        "Target"      "TARGET"
+        "Type"    "DAMAGE_TYPE_PURE"
+        "Damage"  "%damage"
+      }
+    }
+    
+    "Modifiers"
+    {
+      "modifier_item_shield"
+      {
+        "EffectName"    "particles/test_particle/damage_immunity.vpcf"
+        "EffectAttachType"  "follow_origin"
+        "Target"      "CASTER"
+        
+        "Duration" "%duration"
+        "TextureName" "abaddon_aphotic_shield"
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"    "%damage_reduction"
+        }
+      }
+
+      "modifier_item_ex"
+      {
+        "Passive" "1"
+        "Attributes"  "MODIFIER_ATTRIBUTE_MULTIPLE"
+
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"    "33"
+        }
+      }
+
+      "modifier_item_ex2"
+      {
+        "Passive" "1"
+
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"    "3"
+        }
+      }
+    }
+    
+    // Special  
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"        "4.0"
+      }
+      
+      "02"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "damage_reduction"    "-50"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "radius"          "150"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "speed"           "1800"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "distance"        "900"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_INTEGER"
+        "damage"          "125"
+      }
+    }
+  }
+
+  "item_spider_ring"
+  {
+    "ID"      "1251"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_spider_ring"
+    "ScriptFile"              "items/spider_ring/spider_ring.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi" "1"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "1"
+      }
+    }
+  }
+
+  "item_spider_boots"
+  {
+    "ID"      "1252"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_spider_legs"
+    "ScriptFile"              "items/spider_boots/spider_boots.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str" "3"
+      }
+    }
+  }
+
+  "item_cape_of_shadows"
+  {
+    "ID"      "1253"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_vladmir"
+    "ScriptFile"              "items/cape_of_shadows/cape_of_shadows.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "3"
+      }
+    }
+  }
+  "item_satyr_blade"
+  {
+    "ID"      "1254"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_broadsword"
+    "ScriptFile"              "items/satyr_blade/satyr_blade.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg" "8"
+      }
+    }
+  }
+  "item_gloves_of_shadows"
+  {
+    "ID"      "1255"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_gloves"
+    "ScriptFile"              "items/gloves_of_shadows/gloves_of_shadows.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg" "2"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_percent" "5"
+      }
+    }
+  }
+
+  "item_shadow_dancer_cape"
+  {
+    "ID"      "1256"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_nether_shawl"
+    "ScriptFile"              "items/shadow_dancer_cape/shadow_dancer_cape.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi" "3"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_evasion_percent" "5"
+      }
+    }
+  }
+
+  "item_gnolls_leather"
+  {
+    "ID"      "1257"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_gnolls_leather"
+    "ScriptFile"              "items/gnolls_leather/gnolls_leather.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi" "3"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "3"
+      }
+    }
+  }
+
+  "item_gnolls_gloves"
+  {
+    "ID"      "1258"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_gauntlets"
+    "ScriptFile"              "items/gnolls_gloves/gnolls_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str" "4"
+      }
+    }
+  }
+
+  "item_gnolls_mace"
+  {
+    "ID"      "1259"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_gnolls_mace"
+    "ScriptFile"              "items/gnolls_mace/gnolls_mace.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg" "10"
+      }
+    }
+  }
+
+  "item_protectors_ring"
+  {
+    "ID"      "1260"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_ring_of_protection"
+    "ScriptFile"              "items/protectors_ring/protectors_ring.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor" "2"
+      }
+    }
+  }
+
+  "item_protectors_belt"
+  {
+    "ID"      "1261"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_belt_of_strength"
+    "ScriptFile"              "items/protectors_belt/protectors_belt.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor" "1"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str" "6"
+      }
+    }
+  }
+
+  "item_protectors_gloves"
+  {
+    "ID"      "1262"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_protectors_gloves"
+    "ScriptFile"              "items/protectors_gloves/protectors_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg" "5"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_percent" "5"
+      }
+    }
+  }
+
+  "item_fire_necklace"
+  {
+    "ID"      "1263"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_necklace"
+    "ScriptFile"              "items/fire_necklace/fire_necklace.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "4"
+      }
+    }
+  }
+
+  "item_fire_bow"
+  {
+    "ID"      "1264"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_bow"
+    "ScriptFile"              "items/fire_bow/fire_bow.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg" "12"
+      }
+    }
+  }
+
+  "item_crystal_mask"
+  {
+    "ID"      "1265"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_crystal_mask"
+    "ScriptFile"              "items/crystal_mask/crystal_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "mana_regen_percent" "20"
+      }
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "6"
+      }
+    }
+  }
+
+  "item_crystal_boots"
+  {
+    "ID"      "1266"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_crystal_boots"
+    "ScriptFile"              "items/crystal_boots/crystal_boots.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_ms" "45"
+      }
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi" "4"
+      }
+    }
+  }
+
+  "item_wild_cap"
+  {
+    "ID"      "1267"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_wild_cap"
+    "ScriptFile"              "items/wild_cap/wild_cap.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi" "6"
+      }
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int" "3"
+      }
+    }
+  }
+
+  "item_wild_small_shield"
+  {
+    "ID"      "1268"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_wild_small_shield"
+    "ScriptFile"              "items/wild_small_shield/wild_small_shield.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor" "1"
+      }
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg_reduction" "15"
+      }
+    }
+  }
+
+  "item_wild_gloves"
+  {
+    "ID"      "1269"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_wild_gloves"
+    "ScriptFile"              "items/wild_gloves/wild_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_percent" "10"
+      }
+    }
+  }
+  
+  "item_fire_war_pants"
+  {
+    "ID"      "1270"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_war_pants"
+    "ScriptFile"              "items/fire_war_pants/fire_war_pants.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "3"
+      }
+    }
+  }
+
+  "item_fire_war_helm"
+  {
+    "ID"      "1271"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_war_helm"
+    "ScriptFile"              "items/fire_war_helm/fire_war_helm.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "20"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "10"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "1"
+      }
+    }
+  }
+
+  "item_iron_axe"
+  {
+    "ID"      "1272"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_iron_axe"
+    "ScriptFile"              "items/iron_axe/iron_axe.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "45"
+      }
+    }
+  }
+
+  "item_fire_mask"
+  {
+    "ID"      "1273"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_mask"
+    "ScriptFile"              "items/fire_mask/fire_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "25"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "30"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "2"
+      }
+    }
+  }
+
+  "item_fire_staff"
+  {
+    "ID"      "1274"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_staff"
+    "ScriptFile"              "items/fire_staff/fire_staff.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "40"
+      }
+    }
+  }
+
+  "item_fire_gloves"
+  {
+    "ID"      "1275"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_fire_gloves"
+    "ScriptFile"              "items/fire_gloves/fire_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_attrs"  "10"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "20"
+      }
+    }
+  }
+
+  "item_battle_drum"
+  {
+    "ID"      "1276"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_battle_drum"
+    "ScriptFile"              "items/battle_drum/battle_drum.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "5"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_FLOAT"
+        "aura_radius"   "600.0"
+      }
+    }
+  }
+
+  "item_trophy_horn"
+  {
+    "ID"      "1277"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_trophy_horn"
+    "ScriptFile"              "items/trophy_horn/trophy_horn.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "10"
+      }
+    }
+  }
+
+  "item_necromant_cap"
+  {
+    "ID"      "1278"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_necromant_cap"
+    "ScriptFile"              "items/necromant_cap/necromant_cap.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "mp_regen_perc"  "35"
+      }
+    }
+  }
+
+  "item_necromant_pants"
+  {
+    "ID"      "1279"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_necromant_pants"
+    "ScriptFile"              "items/necromant_pants/necromant_pants.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "20"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "2"
+      }
+    }
+  }
+
+  "item_necromant_staff"
+  {
+    "ID"      "1280"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_necromant_staff"
+    "ScriptFile"              "items/necromant_staff/necromant_staff.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "20"
+      }
+    }
+  }
+
+  "item_skelet_bones"
+  {
+    "ID"      "1281"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_skelet_bones"
+    "ScriptFile"              "items/skelet_bones/skelet_bones.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "14"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_regen"  "15"
+      }
+    }
+  }
+
+  "item_skelet_helm"
+  {
+    "ID"      "1282"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_skelet_helm"
+    "ScriptFile"              "items/skelet_helm/skelet_helm.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "10"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "20"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "20"
+      }
+    }
+  }
+
+  "item_skelet_axe"
+  {
+    "ID"      "1283"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_skelet_axe"
+    "ScriptFile"              "items/skelet_axe/skelet_axe.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "45"
+      }
+    }
+  }
+
+  "item_rotten_tooth"
+  {
+    "ID"      "1284"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_rotten_tooth"
+    "ScriptFile"              "items/rotten_tooth/rotten_tooth.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "20"
+      }
+    }
+  }
+
+  "item_cold_amulet"
+  {
+    "ID"      "1285"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_amulet"
+    "ScriptFile"              "items/cold_amulet/cold_amulet.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_attrs"  "5"
+      }
+    }
+  }
+
+  "item_cold_shield"
+  {
+    "ID"      "1286"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_shield"
+    "ScriptFile"              "items/cold_shield/cold_shield.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "2"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_block"  "20"
+      }
+    }
+  }
+
+  "item_cold_blade"
+  {
+    "ID"      "1287"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_blade"
+    "ScriptFile"              "items/cold_blade/cold_blade.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "30"
+      }
+    }
+  }
+
+  "item_cold_knights_mask"
+  {
+    "ID"      "1288"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_knights_mask"
+    "ScriptFile"              "items/cold_knights_mask/cold_knights_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "2"
+      }
+    }
+  }
+
+  "item_cold_talisman"
+  {
+    "ID"      "1289"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_talisman"
+    "ScriptFile"              "items/cold_talisman/cold_talisman.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mana"  "200"
+      }
+    }
+  }
+
+  "item_cold_wraith_mask"
+  {
+    "ID"      "1290"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_wraith_mask"
+    "ScriptFile"              "items/cold_wraith_mask/cold_wraith_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mana_regen"  "35"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "30"
+      }
+    }
+  }
+
+  "item_watermelon"
+  {
+    "ID"      "1291"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_watermelon"
+    "ScriptFile"              "items/watermelon/watermelon.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "ItemInitialCharges" "1"
+    "ItemDisplayCharges" "1"
+    "ItemRequiresCharges" "1"
+    "ItemStackable" "1"
+    "ItemPermanent" "0"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_regen"  "15000"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "buff_duration"  "10"
+      }
+    }
+  }
+
+  "item_cold_troll_pants"
+  {
+    "ID"      "1292"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_troll_pants"
+    "ScriptFile"              "items/cold_troll_pants/cold_troll_pants.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "10"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "6"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "1"
+      }
+    }
+  }
+
+  "item_cold_troll_spear"
+  {
+    "ID"      "1293"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_troll_spear"
+    "ScriptFile"              "items/cold_troll_spear/cold_troll_spear.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "8"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "impact_dmg"  "150"
+      }
+    }
+  }
+
+  "item_cold_staff"
+  {
+    "ID"      "1294"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_cold_staff"
+    "ScriptFile"              "items/cold_staff/cold_staff.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "20"
+      }
+    }
+  }
+
+  "item_wolf_skin"
+  {
+    "ID"      "1295"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_wolf_skin"
+    "ScriptFile"              "items/wolf_skin/wolf_skin.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "15"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen"  "20"
+      }
+    }
+  }
+
+  "item_small_mana_potion"
+  {
+    "ID"      "1296"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_small_mana_potion"
+    "ScriptFile"              "items/small_mana_potion/small_mana_potion.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "ItemInitialCharges" "3"
+    "ItemDisplayCharges" "1"
+    "ItemRequiresCharges" "1"
+    "ItemStackable" "1"
+    "ItemPermanent" "0"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "total_mp"  "300"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "buff_duration"  "10"
+      }
+    }
+  }
+
+  "item_dead_robe"
+  {
+    "ID"      "1297"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dead_robe"
+    "ScriptFile"              "items/dead_robe/dead_robe.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_hp"  "500"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_regen"  "7"
+      }
+    }
+  }
+
+  "item_galvanization_gloves"
+  {
+    "ID"      "1298"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_galvanization_gloves"
+    "ScriptFile"              "items/galvanization_gloves/galvanization_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "40"
+      }
+    }
+  }
+
+  "item_ankh_of_rebirth"
+  {
+    "ID"      "1299"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_ankh_of_rebirth"
+    "ScriptFile"              "items/ankh_of_rebirth/ankh_of_rebirth.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilityCooldown"         "120"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "initial_hp"  "300"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "respawn_time"  "2"
+      }
+    }
+  }
+
+  "item_small_health_potion"
+  {
+    "ID"      "1300"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_small_health_potion"
+    "ScriptFile"              "items/small_health_potion/small_health_potion.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "ItemInitialCharges" "3"
+    "ItemDisplayCharges" "1"
+    "ItemRequiresCharges" "1"
+    "ItemStackable" "1"
+    "ItemPermanent" "0"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "total_mp"  "400"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "buff_duration"  "10"
+      }
+    }
+  }
+
+  "item_ability_mask"
+  {
+    "ID"      "1301"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_ability_mask"
+    "ScriptFile"              "items/ability_mask/ability_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen"  "25"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "50"
+      }
+    }
+  }
+
+  "item_dragonids_horn"
+  {
+    "ID"      "1302"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dragonids_horn"
+    "ScriptFile"              "items/dragonids_horn/dragonids_horn.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_resist_perc"  "25"
+      }
+    }
+  }
+
+  "item_dragonid_boots"
+  {
+    "ID"      "1303"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dragonid_boots"
+    "ScriptFile"              "items/dragonid_boots/dragonid_boots.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_hp"  "1750"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_ms"  "45"
+      }
+    }
+  }
+
+  "item_dragonid_sword"
+  {
+    "ID"      "1304"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dragonid_sword"
+    "ScriptFile"              "items/dragonid_sword/dragonid_sword.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "80"
+      }
+    }
+  }
+
+  "item_dragon_wings"
+  {
+    "ID"      "1305"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dragon_wings"
+    "ScriptFile"              "items/dragon_wings/dragon_wings.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_attrs"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_evasion"  "7"
+      }
+    }
+  }
+
+  "item_dragon_tooth_necklace"
+  {
+    "ID"      "1306"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_dragon_tooth_necklace"
+    "ScriptFile"              "items/dragon_tooth_necklace/dragon_tooth_necklace.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "60"
+      }
+    }
+  }
+
+  "item_harpy_claws"
+  {
+    "ID"      "1307"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_harpy_claws"
+    "ScriptFile"              "items/harpy_claws/harpy_claws.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "50"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "30"
+      }
+    }
+  }
+
+  "item_centaur_axe"
+  {
+    "ID"      "1308"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_centaur_axe"
+    "ScriptFile"              "items/centaur_axe/centaur_axe.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "60"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "50"
+      }
+    }
+  }
+
+  "item_centaur_bow"
+  {
+    "ID"      "1309"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_centaur_bow"
+    "ScriptFile"              "items/centaur_bow/centaur_bow.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "60"
+      }
+    }
+  }
+
+  "item_centaur_hoof"
+  {
+    "ID"      "1310"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_centaur_hoof"
+    "ScriptFile"              "items/centaur_hoof/centaur_hoof.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "5"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_ms"  "45"
+      }
+    }
+  }
+
+  "item_ogre_bracers"
+  {
+    "ID"      "1311"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_ogre_bracers"
+    "ScriptFile"              "items/ogre_bracers/ogre_bracers.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "4"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "75"
+      }
+    }
+  }
+
+  "item_ogre_pants"
+  {
+    "ID"      "1312"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_ogre_pants"
+    "ScriptFile"              "items/ogre_pants/ogre_pants.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "25"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_attrs"  "attribute_value"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_magic_armor"  "15"
+      }
+    }
+  }
+
+  "item_bloodlust_sign"
+  {
+    "ID"      "1313"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_bloodlust_sign"
+    "ScriptFile"              "items/bloodlust_sign/bloodlust_sign.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilityCooldown"         "30"
+    "AbilityManaCost"         "100"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "45"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "buff_duration"  "10"
+      }
+    }
+  }
+
+  "item_sea_deadman_sword"
+  {
+    "ID"      "1314"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_deadman_sword"
+    "ScriptFile"              "items/sea_deadman_sword/sea_deadman_sword.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "90"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "40"
+      }
+    }
+  }
+
+  "item_sea_deadman_helmet"
+  {
+    "ID"      "1315"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_deadman_helmet"
+    "ScriptFile"              "items/sea_deadman_helmet/sea_deadman_helmet.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "8"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_regen"  "25"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "40"
+      }
+    }
+  }
+
+  "item_sea_fin"
+  {
+    "ID"      "1316"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_fin"
+    "ScriptFile"              "items/sea_fin/sea_fin.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_magic_armor"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_evasion"  "10"
+      }
+    }
+  }
+
+  "item_charmer_mask"
+  {
+    "ID"      "1317"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_charmer_mask"
+    "ScriptFile"              "items/charmer_mask/charmer_mask.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "40"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "90"
+      }
+    }
+  }
+
+  "item_charmer_gloves"
+  {
+    "ID"      "1318"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_charmer_gloves"
+    "ScriptFile"              "items/charmer_gloves/charmer_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "30"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "90"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "30"
+      }
+    }
+  }
+
+  "item_sea_trident"
+  {
+    "ID"      "1319"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_trident"
+    "ScriptFile"              "items/sea_trident/sea_trident.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "100"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "90"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "15"
+      }
+    }
+  }
+
+  "item_sea_scaly_boots"
+  {
+    "ID"      "1320"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_scaly_boots"
+    "ScriptFile"              "items/sea_scaly_boots/sea_scaly_boots.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "100"
+      }
+    }
+  }
+
+  "item_sea_scaly_armor"
+  {
+    "ID"      "1321"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_sea_scaly_armor"
+    "ScriptFile"              "items/sea_scaly_armor/sea_scaly_armor.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_hp"  "2500"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "9"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "90"
+      }
+    }
+  }
+
+  "item_thief_shoulder"
+  {
+    "ID"      "1322"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_shoulder"
+    "ScriptFile"              "items/thief_shoulder/thief_shoulder.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "4"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "80"
+      }
+    }
+  }
+
+  "item_thief_cape"
+  {
+    "ID"      "1323"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_cape"
+    "ScriptFile"              "items/thief_cape/thief_cape.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_evasion"  "10"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "80"
+      }
+    }
+  }
+
+  "item_thief_shield"
+  {
+    "ID"      "1324"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_shield"
+    "ScriptFile"              "items/thief_shield/thief_shield.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_block"  "70"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "80"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "8"
+      }
+    }
+  }
+
+  "item_thief_stolen_ring"
+  {
+    "ID"      "1325"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_stolen_ring"
+    "ScriptFile"              "items/thief_stolen_ring/thief_stolen_ring.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_hp"  "2000"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_regen"  "25"
+      }
+    }
+  }
+
+  "item_thief_gloves"
+  {
+    "ID"      "1326"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_gloves"
+    "ScriptFile"              "items/thief_gloves/thief_gloves.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "40"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_agi"  "80"
+      }
+    }
+  }
+
+  "item_thief_helm"
+  {
+    "ID"      "1327"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_helm"
+    "ScriptFile"              "items/thief_helm/thief_helm.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_attrs"  "35"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "6"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "35"
+      }
+    }
+  }
+
+  "item_thief_spear"
+  {
+    "ID"      "1328"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_thief_spear"
+    "ScriptFile"              "items/thief_spear/thief_spear.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "100"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "buff_duration"  "3"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "poison_dmg"  "70"
+      }
+      "04"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "slow_perc"  "10"
+      }
+    }
+  }
+
+  "item_tainted_claws"
+  {
+    "ID"      "1329"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_tainted_claws"
+    "ScriptFile"              "items/tainted_claws/tainted_claws.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "90"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "100"
+      }
+    }
+  }
+
+  "item_tainted_blade"
+  {
+    "ID"      "1230"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_tainted_blade"
+    "ScriptFile"              "items/tainted_blade/tainted_blade.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "100"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "80"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus-as_perc"  "10"
+      }
+    }
+  }
+
+  "item_tainted_shield"
+  {
+    "ID"      "1231"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_tainted_shield"
+    "ScriptFile"              "items/tainted_shield/tainted_shield.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_block"  "140"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_armor"  "9"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "90"
+      }
+    }
+  }
+
+  "item_tainted_ring"
+  {
+    "ID"      "1232"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_tainted_ring"
+    "ScriptFile"              "items/tainted_ring/tainted_ring.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_int"  "80"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_mp_regen_perc"  "35"
+      }
+    }
+  }
+
+  "item_tainted_amulet"
+  {
+    "ID"      "1233"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_tainted_amulet"
+    "ScriptFile"              "items/tainted_amulet/tainted_amulet.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilityCooldown"         "60"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_str"  "100"
+      }
+    }
+  }
+
+  "item_owl_knuckles"
+  {
+    "ID"      "1234"
+    "BaseClass"   "item_lua"
+    "AbilityTextureName"      "item_owl_knuckles"
+    "ScriptFile"              "items/owl_knuckles/owl_knuckles.lua"
+    "ItemShareability"        "ITEM_FULLY_SHAREABLE"
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg"  "140"
+      }
+      "02"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_dmg_perc"  "35"
+      }
+      "03"
+      {
+        "var_type"  "FIELD_INTEGER"
+        "bonus_as_perc"  "40"
+      }
+    }
+  }
+
+}

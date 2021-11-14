@@ -1,0 +1,4 @@
+#base "abilities/hero_abilities.txt"
+"DOTAAbilities"
+{
+}

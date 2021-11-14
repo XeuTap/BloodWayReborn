@@ -1,0 +1,64 @@
+<root> 
+  <styles>
+    <include src="file://{resources}/styles/abilitytooltip.css"/>
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/abilitytooltip.js"/>
+  </scripts>
+  <Panel class="tooltip">
+    <Panel class="headpane">
+      <Label text="Title" class="Header" id="title"/>
+    </Panel>
+    <Panel id="FieldContainer">
+      <Panel class="FieldContainer">
+        <Label text="TYPE" class="FIELD" id="Type"/>
+        <Label text="targeted" class="FIELD" id="TypeField"/>
+      </Panel>
+      <Panel class="FieldContainer">
+        <Label text="WORKS ON" class="FIELD" id="WorksOn"/>
+        <Label text="enemy units" class="FIELD" id="WorksOnField"/>
+      </Panel>
+      <Panel class="FieldContainer">
+        <Label text="DAMAGE TYPE" class="FIELD" id="damageType"/>
+        <Label text="magical" class="FIELD" id="damageTypeField"/>
+      </Panel>
+      <Panel class="FieldContainer">
+        <Label text="PIERCE MAGIC IMMUNITY" class="FIELD" id ="piercesMagicImmunity"/>
+        <Label text="No" class="FIELD" id ="piercesMagicImmunityField"/>
+      </Panel>
+      <Panel class="FieldContainer">
+        <Label text="PURGEBALE" class="FIELD" id="purgeable"/>
+        <Label text="No" class="FIELD" id="purgeableField"/>
+      </Panel>
+    </Panel>
+    <Label text="ABILITY DESCRIPTION" class="TEXT" id="description"/>
+    <Panel id="SpecialContainer">
+      <Panel class="SpecialContainer">
+        <Label text="SPECIAL1" class="FIELD" id="Special1"/>
+        <Label text="100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160/100/120/140/160" class="VALUE" id="SpecialField1"/>
+      </Panel>
+      <Panel class="SpecialContainer">
+        <Label text="SPECIAL2" class="FIELD" id="Special2"/>
+        <Label text="100/120/140/160" class="VALUE" id="SpecialField2"/>
+      </Panel>
+      <Panel class="SpecialContainer">
+        <Label text="SPECIAL3" class="FIELD" id="Special3"/>
+        <Label text="100/120/140/160" class="VALUE" id="SpecialField3"/>
+      </Panel>
+      <Panel class="SpecialContainer">
+        <Label text="SPECIAL4" class="FIELD" id="Special4"/>
+        <Label text="100/120/140/160" class="VALUE" id="SpecialField4"/>
+      </Panel>
+      <Panel class="SpecialContainer">
+        <Label text="SPECIAL5" class="FIELD" id="Special5"/>
+        <Label text="100/120/140/160" class="VALUE" id="SpecialField5"/>
+      </Panel>
+      <Panel class="BottomContainer">
+        <Label text="CD" class="FIELD" id="CD"/>
+        <Label text="100/120/140/160" class="VALUE" id="CDField"/>
+        <Label text="MC" class="FIELD" id="MC"/>
+        <Label text="100/120/140/160" class="VALUE" id="MCField"/>
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

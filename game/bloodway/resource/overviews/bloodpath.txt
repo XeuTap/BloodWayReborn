@@ -1,0 +1,8 @@
+bloodpath
+{
+	material materials/overviews/bloodpath.vmat
+	pos_x -16512
+	pos_y 16256
+	scale 32.000
+}
+

@@ -1,0 +1,41 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 12
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/portal/portal_open_good_sizzle.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/portal/portal_open_good_endflash.vpcf"
+			m_bEndCap = true
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/portal/portal_open_good_sparkle.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/portal/portal_open_good_ring.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/basic_ambient/portal_open_mesh.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/events/ti10/portal/portal_open_good_distort.vpcf"
+		},
+	]
+}

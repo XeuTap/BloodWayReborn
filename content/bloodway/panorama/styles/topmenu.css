@@ -1,0 +1,14 @@
+#SaveLoadButton
+{
+    width: 25px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+#ButtonsBar
+{   
+    margin-left: 160px;
+    margin-top: 10px;
+    width:300px;
+    height:35px;
+}

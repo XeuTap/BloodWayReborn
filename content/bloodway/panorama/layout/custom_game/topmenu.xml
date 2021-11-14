@@ -1,0 +1,43 @@
+<root> 
+  <styles>
+    <include src="file://{resources}/styles/loadsavemenu.css" />
+    <include src="file://{resources}/styles/topmenu.css" />
+    <include src="file://{resources}/styles/reincarnationmenu.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/loadsavemenu.js" />
+    <include src="file://{resources}/scripts/topmenu.js" />
+    <include src="file://{resources}/scripts/reincarnationmenu.js" />
+  </scripts>
+  <Panel class="BasePanel">
+    <Panel id="SaveLoadMenu">
+      <Panel id="TopBar">
+        <Image text="Close" id="CloseButton" class="CloseButton" src="file://{images}/custom_game/closeLogo.png"/>
+      </Panel>
+      <Label class="ServerConnection" />
+      <TextButton text="Load" id="LoadButton" class="Button" />
+      <TextButton text="Save" id="SaveButton" class="Button" />
+    </Panel>
+    <Panel hittest="true" id="ReincarnationMenu">
+      <Panel id="ReincarnationHeader">
+        <Label text="#Reincarnation" id="ReincarnationTitle" class ="Text"/>
+        <Image text="Close" id="ReincarnationCloseButton" class="CloseButton" src="file://{images}/custom_game/closeLogo.png"/>
+      </Panel>
+      <Panel class = "BottomBar">
+        <TextButton text="#Reincarnate" id="Reincarnate" class="Button" />
+      </Panel>
+      <Panel style="visibility:collapse;" id="PortraitContainer1" class="PortraitContainer">
+      </Panel>
+      <Panel style="visibility:collapse;" id="PortraitContainer2" class="PortraitContainer">
+      </Panel>
+      <Panel style="visibility:collapse;" id="PortraitContainer3" class="PortraitContainer">
+      </Panel>
+    </Panel>
+    <Panel id="ButtonsBar">
+      <Image text="#SaveLoadButton" id="SaveLoadButton" src="file://{images}/custom_game/saveLogo.png" />
+      <Image text="#ReincarnationButton" id="ReincarnationButton" src="file://{images}/custom_game/reincarnationLogo.png" />
+      <Image style="visibility:collapse;" src="file://{images}/custom_game/attributeAgi.png" />
+    </Panel>
+  </Panel>
+
+</root>

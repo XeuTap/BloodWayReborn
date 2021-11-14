@@ -1,0 +1,6 @@
+*.vmap
+game/bloodway/maps/*
+game/bloodway/materials/*
+game/bloodway/models/*
+game/bloodway/tools_thumbnail_cache.bin
+content/bloodway/maps/*
